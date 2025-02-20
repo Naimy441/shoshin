@@ -13,7 +13,7 @@ export default function LandingPage() {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-4 py-8"
       >
-        <h1 className="text-4xl font-bold">MathCards</h1>
+        <h1 className="text-4xl font-bold">Shoshin</h1>
       </motion.header>
 
       <main className="container mx-auto px-4 py-16">
@@ -23,8 +23,8 @@ export default function LandingPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center"
         >
-          <h2 className="text-5xl font-bold mb-6">Master Math with AI-powered Flashcards</h2>
-          <p className="text-xl mb-8">Elevate your learning experience with our sleek, intuitive flashcard app</p>
+          <h2 className="text-5xl font-bold mb-6">Master math with AI-powered flashcards</h2>
+          <p className="text-xl mb-8">No two study sessions are the same!<br></br>Add your problems, and we’ll create fresh ones to reinforce your learning.</p>
           <div className="flex justify-center">
   <Link href="/app">
     <motion.button

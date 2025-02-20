@@ -20,7 +20,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
     <div className={`flex h-screen ${darkMode ? "dark" : ""}`}>
       <nav className="w-64 bg-white dark:bg-gray-800 shadow-lg">
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">MathCards</h1>
+          <h1 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Shoshin</h1>
         </div>
         <ul className="mt-4">
           {[
