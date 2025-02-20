@@ -47,16 +47,19 @@ export default function LandingPage() {
         className="container mx-auto px-4 py-16"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {["Create Decks", "Add Flashcards", "Study Anytime"].map((feature, index) => (
+        {[
+        { title: "Create Decks", text: "Organize your study material" },
+        { title: "Add Flashcards", text: "With the power of AI" },
+        { title: "Study Anytime", text: "Access your decks on-the-go" }
+        ].map((feature, index) => (
             <motion.div
-              key={feature}
+              key={feature.text}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
               className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-lg"
-            >
-              <h3 className="text-2xl font-semibold mb-4">{feature}</h3>
-              <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            ><h3 className="text-2xl font-semibold mb-4">{feature.title}</h3>
+              <p className="text-lg">{feature.text}</p>
             </motion.div>
           ))}
         </div>
